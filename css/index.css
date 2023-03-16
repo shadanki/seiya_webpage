@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+:root {
+  --FPTheme: #87A2A1;
+  --BGColor: #E0E1E3;
+  --FGColor: #4F5B66;
+  --White: #FFFFFF;
+  --FontRound: 'Varela Round', sans-serif;
+  --FontEnglish: 'Cormorant Garamond', serif;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.clearfix:after {
+  content:"";
+  display:block;
+  clear: both;
+}
+
+/* リセットcss */
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: var(--FontJapanese);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* リセットcss終わり */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--FPTheme);
+}
+
+.content {
+  margin: 160px auto;
+  margin-bottom: 0;
+  width: 1440px;
+}
+
+.main {
+  border: var(--White);
+  border-style: solid;
+  height: 630px;
+  margin-bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#mainImg {
+  max-width: 70%;
+  margin-inline: auto;
+}
+
+.mainNav {
+  position: relative;
+  top: 30px;
+  justify-content: center;
+  height: 0;
+}
+
+.mainNav a {
+  color: var(--White);
+  font-family: var(--FontRound);
+  font-size: 30px;
+}
+
+.mainNav a:hover {
+  border-bottom: 3px solid var(--White);
+}
+
+.mainNav li {
+  margin-top: 10px;
+  margin-inline: 20px;
+}
+
+.content h3 {
+  text-align: center;
+  color: var(--White);
+  font-family: var(--FontEnglish);
+  font-size: 40px;
+  font-weight: 300;
+}

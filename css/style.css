@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+:root {
+  --FPTheme: #87A2A1;
+  --BGColor: #E0E1E3;
+  --FGColor: #4F5B66;
+  --LightText: #A7ADBA;
+  --White: #FFFFFF;
+  --Grey: #707070;
+  --FontRound: 'Varela Round', sans-serif;
+  --FontEnglish: 'Roboto', sans-serif;
+  --FontEngTitle: 'Libre Baskerville', serif;
+  --FontJapanese: 'Noto Serif JP', serif;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.clearfix:after {
+  content:"";
+  display:block;
+  clear: both;
+}
+
+/* リセットcss */
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+p {
+  font-family: var(--FontJapanese);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* リセットcss終わり */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--BGColor);
+  color: var(--FGColor);
+  font-size: 20px;
+  line-height: 2;
+}
+
+.top {
+  height: 100%;
+}
+
+header {
+  padding: 50px 50px 0;
+}
+
+.logo {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+
+.headerNav {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+
+.headerNav a {
+  color: var(--FGColor);
+  font-family: var(--FontRound);
+  margin-left: 36px;
+}
+
+.headerNav a:hover {
+  border-bottom: 2px solid var(--FGColor);
+}
+
+footer {
+  background-color: var(--FGColor);
+  height: 80px;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.copyright {
+  text-align: center;
+}
+
+footer small {
+  color: var(--White);
+  font-family: var(--FontEnglish);
+}
+
+/* About */
+.headerTitle {
+  justify-content: center;
+}
+
+.portrait {
+  background-color: var(--White);
+  height: 650px;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.nameTitle {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+
+.nameTitle h3 {
+  font-family: var(--FontJapanese);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.nameTitle h2 {
+  font-family: var(--FontEngTitle);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.main {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.main p {
+  font-family: var(--FontJapanese);
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.icon {
+  font-family: var(--FontEngTitle);
+}
+
+.icon::before {
+  content: "";
+  padding-right: 10px;
+  border-left: 3px solid var(--Grey);
+}
+
+.hobbyGallery div:first-child {
+  margin-left: 0;
+}
+
+.hobbyGallery div:last-child {
+  margin-right: 0;
+}
+
+.pannel {
+  background-color: var(--White);
+  width: 228px;
+  height: 400px;
+  margin-inline: 8px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--LightText);
+  font-family: var(--FontJapanese);
+}
+
+/* works */
+.emptyMessage {
+  height: 394px;
+  color: var(--LightText);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.emptyMessage a {
+  color: var(--LightText);
+  text-decoration: underline;
+}
+
+/* contact */
+.contactForm {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contactForm p {
+  font-family: var(--FontRound);
+}
+
+form dl {
+  margin: 0;
+  margin-top: 50px;
+}
+
+form dt {
+  font-weight: bold;
+  line-height: 1;
+  font-family: var(--FontRound);
+}
+
+form dd {
+  margin-left: 0;
+  margin-bottom: 36px;
+}
+
+form .name, form .email, form .message {
+  width: 780px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--LightText);
+}
+
+form .name, form .email {
+  height: 30px;
+}
+
+form .message {
+  height: 150px;
+}
+
+form input, form textarea{
+  font-size: 18px;
+  font-family: var(--FontRound);
+}
+
+form .btnCase {
+  justify-content: center;
+}
+
+form button {
+  background-color: var(--LightText);
+  color: var(--White);
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: var(--White);
+  border: 1px solid var(--LightText);
+  color: var(--LightText);
+  cursor: pointer;
+}
